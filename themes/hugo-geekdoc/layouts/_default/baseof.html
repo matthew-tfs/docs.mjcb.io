@@ -5,6 +5,17 @@
   {{ if default false .Site.Params.GeekdocDarkModeCode }}code-theme="dark"{{ end }}
 >
   <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TC72E9W5TV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TC72E9W5TV');
+</script>
+
     {{ partial "head/meta" . }}
     <title>
       {{- if eq .Kind "home" -}}
