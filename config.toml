@@ -8,6 +8,8 @@ pygmentsCodeFences = true
 disablePathToLower = true
 enableRobotsTXT = true
 
+googleAnalytics = "G-TC72E9W5TV"
+
 [markup]
     [markup.goldmark.renderer]
     unsafe = true
@@ -20,6 +22,8 @@ enableRobotsTXT = true
     tag = "tags"
 
 [params]
+    ga_analytics = "G-TC72E9W5TV"
+
   # (Optional, default 6) Set how many table of contents levels to be showed on page.
   # Use false to hide ToC, note that 0 will default to 6 (https://gohugo.io/functions/default/)
   # You can also specify this parameter per page in front matter.
