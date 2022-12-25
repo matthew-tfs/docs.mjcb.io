@@ -27,7 +27,7 @@ googleAnalytics = "G-TC72E9W5TV"
     # (Optional, default 6) Set how many table of contents levels to be showed on page.
     # Use false to hide ToC, note that 0 will default to 6 (https://gohugo.io/functions/default/)
     # You can also specify this parameter per page in front matter.
-    geekdocToC = 3
+    geekdocToC = 6
 
     # (Optional, default false) Render menu from data file in 'data/menu/main.yaml'.
     # See also https://geekdocs.de/usage/menus/#bundle-menu.
