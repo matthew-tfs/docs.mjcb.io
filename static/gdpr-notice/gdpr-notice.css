@@ -1,0 +1,42 @@
+.gdpr-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #4286c9;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transition: 400ms;
+}
+
+.gdpr-container.active {
+  bottom: 0;
+}
+
+.gdpr-container a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.gdpr-button {
+    background-color: #30333d;
+    color: #ffffff;
+    display: inline-flex;
+    padding: 0.7rem 1.5rem;
+    text-transform: uppercase;
+    border: 1px solid #30333d;
+    font-size: 0.9rem;
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    margin-bottom: 16px;
+    user-select: none;
+}
+
+.gdpr-button:hover, .gdpr-button:focus {
+    background-color: #353a3f;
+    color: #ffffff;
+    border: 1px solid #353a3f;
+}
