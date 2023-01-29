@@ -1,5 +1,5 @@
 ---
-title: "Subordinate CA Setup"
+title: "2 - Subordinate CA Setup"
 tags: [
     "ADCS",
     "Microsoft",

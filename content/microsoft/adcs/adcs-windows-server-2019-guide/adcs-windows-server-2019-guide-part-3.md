@@ -1,5 +1,5 @@
 ---
-title: "Deploy Root and Subordinate Certificates"
+title: "3 - Deploy Root and Subordinate Certificates"
 tags: [
     "ADCS",
     "Microsoft",

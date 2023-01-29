@@ -1,5 +1,5 @@
 ---
-title: "Certificate Template Deployment"
+title: "6 - Certificate Template Deployment"
 tags: [
     "ADCS",
     "Microsoft",

@@ -1,5 +1,5 @@
 ---
-title: "Certificate Revocation Policies"
+title: "4 - Certificate Revocation Policies"
 tags: [
     "ADCS",
     "Microsoft",

@@ -1,5 +1,5 @@
 ---
-title: "Certificate Auto-Enrollment"
+title: "7 - Certificate Auto-Enrollment"
 tags: [
     "ADCS",
     "Microsoft",

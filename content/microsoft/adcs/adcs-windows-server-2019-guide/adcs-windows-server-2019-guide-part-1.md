@@ -1,5 +1,5 @@
 ---
-title: "Offline Root CA Setup"
+title: "1 - Offline Root CA Setup"
 tags: [
     "ADCS",
     "Microsoft",

@@ -1,5 +1,5 @@
 ---
-title: "Configure Private Key Archive and Recovery"
+title: "5 - Configure Private Key Archive and Recovery"
 tags: [
     "ADCS",
     "Microsoft",
