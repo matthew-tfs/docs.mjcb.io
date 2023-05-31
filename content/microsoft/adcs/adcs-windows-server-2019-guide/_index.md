@@ -59,7 +59,7 @@ This guide uses a simplified and very basic Server Infrastructure and is the bar
 
 The example that is going to be used in this guide is the **TFS Labs** Domain (**corp.tfslabs.com**). It is very basic in design, and there is a total of 3 Servers, 1 Workstation and 1 iOS Device:
 
-![](/images/microsoft/adcs/adcs-windows-server-2019-guide/ca-infrastructure-overview.png)
+![TFS Labs Certificate Authority Infrastructure Overview](/images/microsoft/adcs/adcs-windows-server-2019-guide/ca-infrastructure-overview.png)
 
 The Virtual Machines that are being used in this guide are using the following specifications:
 
@@ -83,7 +83,7 @@ Here is breakdown of the Servers and Workstations in this environment:
 
 For the Certificates that will be issued for the **TFS Labs** Domain, there will be one Root and one Subordinate Certificate in a **Two-Tier Certificate Authority**:
 
-![](/images/microsoft/adcs/adcs-windows-server-2019-guide/ca-certificates-structure.png)
+![TFS Labs Certificate Authority Hierarchy](/images/microsoft/adcs/adcs-windows-server-2019-guide/ca-certificates-structure.png)
 
 | Certificate Type | Certificate Name               | Server Name | Validity Period |
 |:-----------------|:-------------------------------|:------------|:----------------|

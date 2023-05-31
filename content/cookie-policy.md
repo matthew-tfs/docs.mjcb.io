@@ -6,7 +6,7 @@ geekdocAnchor: false
 
 **This agreement is in effect as of October 1, 2022.**
 
-This cookie policy for **docs.mjcb.io** describes how and why this website uses cookies and similar technologies to recognize you when you visit the [https://docs.mjcb.io](https://mjcb.io) website. It explains what these technologies are and why they are used, as well as your rights to control the usage of them on this website.
+This cookie policy for **docs.mjcb.io** describes how and why this website uses cookies and similar technologies to recognize you when you visit the [https://docs.mjcb.io](https://docs.mjcb.io) website. It explains what these technologies are and why they are used, as well as your rights to control the usage of them on this website.
 
 {{< toc >}}
 
