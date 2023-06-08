@@ -36,14 +36,14 @@ The procedure for creating a Certificate Authority has not changed considerably 
 
 Since this is such a complicated subject there are eight parts to this guide. Here are the links to each part of the guide:
 
-* [Part 1 - Offline Root CA Setup](/microsoft/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-1)
-* [Part 2 - Subordinate CA Setup](/microsoft/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-2)
-* [Part 3 - Deploy Root and Subordinate Certificate](/microsoft/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-3)
-* [Part 4 - Certificate Revocation Policies](/microsoft/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-4)
-* [Part 5 - Configure Private Key Archive and Recovery](/microsoft/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-5)
-* [Part 6 - Certificate Template Deployment](/microsoft/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-6)
-* [Part 7 - Certificate Auto-Enrollment](/microsoft/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-7)
-* [Part 8 - AD CS Final Steps](/microsoft/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-8)
+* [Part 1 - Offline Root CA Setup](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-1/)
+* [Part 2 - Subordinate CA Setup](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-2/)
+* [Part 3 - Deploy Root and Subordinate Certificate](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-3/)
+* [Part 4 - Certificate Revocation Policies](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-4/)
+* [Part 5 - Configure Private Key Archive and Recovery](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-5/)
+* [Part 6 - Certificate Template Deployment](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-6/)
+* [Part 7 - Certificate Auto-Enrollment](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-7/)
+* [Part 8 - AD CS Final Steps](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-8/)
 
 ## Environment Assumptions ##
 
@@ -59,7 +59,7 @@ This guide uses a simplified and very basic Server Infrastructure and is the bar
 
 The example that is going to be used in this guide is the **TFS Labs** Domain (**corp.tfslabs.com**). It is very basic in design, and there is a total of 3 Servers, 1 Workstation and 1 iOS Device:
 
-![TFS Labs Certificate Authority Infrastructure Overview](/images/microsoft/adcs/adcs-windows-server-2019-guide/ca-infrastructure-overview.png)
+![TFS Labs Certificate Authority Infrastructure Overview](/images/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/ca-infrastructure-overview.png)
 
 The Virtual Machines that are being used in this guide are using the following specifications:
 
@@ -83,7 +83,7 @@ Here is breakdown of the Servers and Workstations in this environment:
 
 For the Certificates that will be issued for the **TFS Labs** Domain, there will be one Root and one Subordinate Certificate in a **Two-Tier Certificate Authority**:
 
-![TFS Labs Certificate Authority Hierarchy](/images/microsoft/adcs/adcs-windows-server-2019-guide/ca-certificates-structure.png)
+![TFS Labs Certificate Authority Hierarchy](/images/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/ca-certificates-structure.png)
 
 | Certificate Type | Certificate Name               | Server Name | Validity Period |
 |:-----------------|:-------------------------------|:------------|:----------------|
