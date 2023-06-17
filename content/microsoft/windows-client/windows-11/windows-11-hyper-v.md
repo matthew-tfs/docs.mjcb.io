@@ -8,7 +8,7 @@ Windows 11 has much stricter system requirements compared to earlier versions of
 
 This guide details the steps that are required to configure and install Windows 11 on Hyper-V. The procedure for the actual installation of Windows 11 is beyond the scope of this guide but is straightforward and not overly complicated.
 
-**These instructions were created using Hyper-V on Windows Server 2022 Standard (21H2 Build 20348.1726) and Windows 11 Pro (22H2 Build 22621.1702)**
+**These instructions were created using Hyper-V on Windows Server 2022 Standard (21H2 Build 20348.1726) and Windows 11 Pro (22H2 Build 22621.1702).**
 
 {{< toc >}}
 

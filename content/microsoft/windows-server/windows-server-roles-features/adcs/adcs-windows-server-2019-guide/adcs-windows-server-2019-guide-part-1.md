@@ -310,3 +310,15 @@ A:\TFS-ROOT-CA_TFS Labs Certificate Authority.crt
 ```
 
 5. Eject the **RootCAFiles** Virtual Floppy Disk.
+
+## AD CS on Windows Server 2019 Guide ##
+
+* [Introduction - AD CS on Windows Server 2019 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/)
+* **Part 1 - Offline Root CA Setup**
+* [Part 2 - Subordinate CA Setup](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-2/)
+* [Part 3 - Deploy Root and Subordinate Certificate](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-3/)
+* [Part 4 - Certificate Revocation Policies](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-4/)
+* [Part 5 - Configure Private Key Archive and Recovery](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-5/)
+* [Part 6 - Certificate Template Deployment](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-6/)
+* [Part 7 - Certificate Auto-Enrollment](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-7/)
+* [Part 8 - AD CS Final Steps](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-8/)

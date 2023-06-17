@@ -47,3 +47,15 @@ Once the Auto-Enrollment options have been added to Group Policy, allow up to 1 
 ## 7.3 Auto-Enrollment Verification ##
 
 Confirm that the Auto-Enrollment of the **TFS Labs User Certificate** and **TFS Labs Workstation Certificate** is working correctly by running the **gpupdate /force** command on the **TFS-WIN10** and restarting it. If Auto-Enrollment is working correctly, there should be an additional Certificate in the **Personal** Store belonging to the User Account and the Workstation Account.
+
+## AD CS on Windows Server 2019 Guide ##
+
+* [Introduction - AD CS on Windows Server 2019 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/)
+* [Part 1 - Offline Root CA Setup](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-1/)
+* [Part 2 - Subordinate CA Setup](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-2/)
+* [Part 3 - Deploy Root and Subordinate Certificate](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-3/)
+* [Part 4 - Certificate Revocation Policies](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-4/)
+* [Part 5 - Configure Private Key Archive and Recovery](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-5/)
+* [Part 6 - Certificate Template Deployment](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-6/)
+* **Part 7 - Certificate Auto-Enrollment**
+* [Part 8 - AD CS Final Steps](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-8/)

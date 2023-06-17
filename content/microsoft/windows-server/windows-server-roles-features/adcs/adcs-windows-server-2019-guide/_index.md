@@ -21,14 +21,14 @@ This [Building a Certificate Authority in Windows Server 2019](https://mjcb.io/b
 
 The goal of this guide is to deploy an internal Certificate Authority and a Public Key Infrastructure (PKI) using **Active Directory Certificate Services** in Windows Server 2019. This provides a lot of benefits to an organization, including features like:
 
-* Utilizing SSL on internal Servers and on internal Websites.
-* Replacing self-signed Certificates on internal Network Devices.
-* Increased security for Remote Desktop Services on internal Servers.
+* Utilizing SSL on internal servers and on internal websites.
+* Replacing self-signed Certificates on internal network devices.
+* Increased security for Remote Desktop Services on internal servers.
 * Utilize internal Certificates for Applications and Services.
 * Issue internal Certificates for VPN Services.
 * Issue internal Certificates for Wireless Users and Access Points.
 * Allow for better security with Active Directory with LDAPS.
-* Use your own internal Certificate for SSL Decryption on Firewalls and Proxy Devices.
+* Use your own internal Certificate for SSL Decryption on firewalls and Proxy Devices.
 
 The procedure for creating a Certificate Authority has not changed considerably since Windows Server 2012 R2. Recent enhancements and changes with some vendors (Apple and Mozilla) do require a few minor changes to allow for security changes with those vendors.
 
@@ -36,6 +36,7 @@ The procedure for creating a Certificate Authority has not changed considerably 
 
 Since this is such a complicated subject there are eight parts to this guide. Here are the links to each part of the guide:
 
+* [Introduction - AD CS on Windows Server 2019 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/)
 * [Part 1 - Offline Root CA Setup](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-1/)
 * [Part 2 - Subordinate CA Setup](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-2/)
 * [Part 3 - Deploy Root and Subordinate Certificate](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-3/)
@@ -47,7 +48,7 @@ Since this is such a complicated subject there are eight parts to this guide. He
 
 ## Environment Assumptions ##
 
-All Servers in this guide are using **Windows Server 2019 Standard (Desktop Experience)**, but this should work correctly using Windows Server 2016. In this guide, the Active Directory Domain and Forest Functional Levels are set to Windows Server 2016 levels, but this should work for Windows Server 2012 R2 functional levels.
+All servers in this guide are using **Windows Server 2019 Standard (Desktop Experience)**, but this should work correctly using Windows Server 2016. In this guide, the Active Directory Domain and Forest Functional Levels are set to Windows Server 2016 levels, but this should work for Windows Server 2012 R2 functional levels.
 
 This guide should work perfectly fine using Hyper-V, VirtualBox or VMware. This guide does not assume any Virtualization platform so there should not be any issues using any Virtualization platform.
 
@@ -55,9 +56,9 @@ For this guide I am using VMware Workstation 15 Pro (15.5.1 build-15018445) on W
 
 ## Environment Design and Overview ##
 
-This guide uses a simplified and very basic Server Infrastructure and is the bare minimum that is required for Active Directory Certificate Services to operate correctly. It is technically possible to run Active Directory Certificate Services on the same Server as a Domain Controller, but this is very bad practice and can have some unintended consequences if there is ever an issue with it. It is also incredibly insecure to have your Root Certificate Server available at all times.
+This guide uses a simplified and very basic server infrastructure and is the bare minimum that is required for Active Directory Certificate Services to operate correctly. It is technically possible to run Active Directory Certificate Services on the same server as a Domain Controller, but this is very bad practice and can have some unintended consequences if there is ever an issue with it. It is also incredibly insecure to have your Root Certificate Server available at all times.
 
-The example that is going to be used in this guide is the **TFS Labs** Domain (**corp.tfslabs.com**). It is very basic in design, and there is a total of 3 Servers, 1 Workstation and 1 iOS Device:
+The example that is going to be used in this guide is the **TFS Labs** Domain (**corp.tfslabs.com**). It is very basic in design, and there is a total of 3 servers, 1 Workstation and 1 iOS Device:
 
 ![TFS Labs Certificate Authority Infrastructure Overview](/images/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/ca-infrastructure-overview.png)
 
@@ -72,7 +73,7 @@ The Virtual Machines that are being used in this guide are using the following s
 
 The iOS device used in this environment is an iPad Air 3 and is running the latest version of iPad OS (13.3.1 as of the time of this writing). It is on wireless on the same network and has an IP address of 192.168.0.213/24.
 
-Here is breakdown of the Servers and Workstations in this environment:
+Here is breakdown of the servers and workstations in this environment:
 
 * **TFS-DC01** the Domain Controller for the **TFS Labs** Domain. It is also needed to allow for Certificate distribution and for Group Policy updates to the **TFS Labs** Domain. It is also the LDAP CDP and AIA Publishing Location. **This guide assumes that you already know how to setup a basic Active Directory Domain Controller and Domain and have done this already prior to starting this guide**.
 * **TFS-ROOT-CA** is the Offline Root Certificate Authority and it is only used to issue the Root Certificate for the **TFS Labs** Domain. It signs the Certificate for the Subordinate Certificate Authority only and is left offline unless there is an issue with the Subordinate Certificate Authority. It is not a member of the **TFS Labs** Domain and has no additional software or services installed on it. Once the implementation of the Certificate Authority is complete it can be shutdown (but not deleted).
@@ -93,7 +94,7 @@ For the Certificates that will be issued for the **TFS Labs** Domain, there will
 
 The Validity Period for the Certificates in the **TFS Labs** Domain is set to the following:
 
-* The Standalone Root CA Certificate is set to expire after 10 years. This Certificate is the Root of the entire PKI at **TFS Labs**. 10 Years for the Validity Period is perfectly acceptable for a Root CA, and that Server will need to be brought online once every 52 weeks in order to update the CRL for the Subordinate CA.
+* The Standalone Root CA Certificate is set to expire after 10 years. This Certificate is the Root of the entire PKI at **TFS Labs**. 10 Years for the Validity Period is perfectly acceptable for a Root CA, and that server will need to be brought online once every 52 weeks in order to update the CRL for the Subordinate CA.
 * The Enterprise Subordinate CA Certificate is set to expire after 5 years. This Certificate is used to Sign all Certificates that are issued to the **TFS Labs** Domain. Unlike the Root CA, it is always online.
 * Any Certificates that are issued from the Enterprise CA is limited to 1 year only. A lot of vendors, the most recent being Apple have specifically restricted SSL lifetimes to 1 year only. This forces Vendors to keep their SSL Certificates up to date, and to make sure that modern security practices and technologies are being used.
 
@@ -107,8 +108,8 @@ In the deployment of Active Directory Certificate Services on the **TFS Labs** D
 * The Root Certificate will be valid for 10 Years and the Subordinate Certificate will be valid for 5 Years. All issued Certificates from the Subordinate CA will be valid for 1 Year only.
 * The Offline Root CA is only online for creating the Enterprise CA and is then shutdown and can isolated from the network in order to keep it safe.
 * Any files that need to be transferred to and from the Root CA is to be done with a Virtual Floppy Disk. This will be deleted at the end of the implementation phase and when needed in the future a new one should be created.
-* Auditing will be enabled on all Servers that are performing Certificate related tasks. This will write events to the Windows Event Log every time a Certificate is Issued, Revoked, Requested, etc.
-* CNAME records will be used when possible in the deployment to allow for the **TFS-CA01** Server to be split up in the future if needed.
+* Auditing will be enabled on all servers that are performing Certificate related tasks. This will write events to the Windows Event Log every time a Certificate is Issued, Revoked, Requested, etc.
+* CNAME records will be used when possible in the deployment to allow for the **TFS-CA01** server to be split up in the future if needed.
 
 ## Why Use an Offline CA? ##
 
@@ -116,7 +117,7 @@ There are a lot of very good reasons to use an Offline Root CA in your environme
 
 The Root CA is critical to your PKI and you don’t want to risk having the Root CA compromised and having your Private Keys leaked. This would effectively invalidate every single Certificate in your organization.
 
-The best way to protect the Root CA is always to have it be completely unavailable to people on the network. It isn’t needed in day to day operations, so having it online is not necessary and can put it at unnecessary risk. This also means that it is not enough to just have it turned off until needed, it shouldn’t be accessible by anyone even when it is temporarily powered on. A lot of administrators don’t even have a network connection to it and use Virtual Floppy Disks to transfer data between it and other Servers. It is cumbersome, but this happens so infrequently that it shouldn’t be an issue. Some Virtualization platforms allow for Copy/Paste, but that should be disabled for the Root CA in order to minimize the attack surface on it.
+The best way to protect the Root CA is always to have it be completely unavailable to people on the network. It isn’t needed in day to day operations, so having it online is not necessary and can put it at unnecessary risk. This also means that it is not enough to just have it turned off until needed, it shouldn’t be accessible by anyone even when it is temporarily powered on. A lot of administrators don’t even have a network connection to it and use Virtual Floppy Disks to transfer data between it and other servers. It is cumbersome, but this happens so infrequently that it shouldn’t be an issue. Some Virtualization platforms allow for Copy/Paste, but that should be disabled for the Root CA in order to minimize the attack surface on it.
 
 ## Registered IANA Number ##
 

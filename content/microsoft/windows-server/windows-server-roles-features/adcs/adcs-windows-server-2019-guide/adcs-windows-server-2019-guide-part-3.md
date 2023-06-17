@@ -47,3 +47,15 @@ Since the **Root and Subordinate Certificates** are ready for deployment, you ca
 5. Open **Safari** on the iOS Device and go to **http​://tfs-ca01.corp.tfslabs.com/Certificates** to access the **Root and Subordinate Certificates**.
 6. Click on the **TFS Labs Enterprise CA.crt** file. You should get a popup stating **This website is trying to download a configuration profile. Do you want to allow this?** and click the **Allow** button to confirm it. You will then get a prompt that the **SSL Profile** was downloaded. Click the **Close** button to continue.
 7. Open the **Settings** on your iOS device and select the **Profile Downloaded** menu option. A prompt should appear with the **Install Profile** options for the **TFS Labs Enterprise CA**. Click the **Install** button. You may be prompted to enter your credentials. On the **Warning** prompt, click the **Install** button to continue. Click **Done** to finish the installation.
+
+## AD CS on Windows Server 2019 Guide ##
+
+* [Introduction - AD CS on Windows Server 2019 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/)
+* [Part 1 - Offline Root CA Setup](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-1/)
+* [Part 2 - Subordinate CA Setup](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-2/)
+* **Part 3 - Deploy Root and Subordinate Certificate**
+* [Part 4 - Certificate Revocation Policies](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-4/)
+* [Part 5 - Configure Private Key Archive and Recovery](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-5/)
+* [Part 6 - Certificate Template Deployment](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-6/)
+* [Part 7 - Certificate Auto-Enrollment](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-7/)
+* [Part 8 - AD CS Final Steps](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/adcs-windows-server-2019-guide-part-8/)
