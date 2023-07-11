@@ -2,20 +2,9 @@
 <html
   lang="{{ .Site.Language.Lang }}"
   class="color-toggle-hidden"
-  {{ if default false .Site.Params.GeekdocDarkModeCode }}code-theme="dark"{{ end }}
+  {{ if default false .Site.Params.geekdocDarkModeCode }}code-theme="dark"{{ end }}
 >
   <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TC72E9W5TV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TC72E9W5TV');
-</script>
-
     {{ partial "head/meta" . }}
     <title>
       {{- if eq .Kind "home" -}}
@@ -37,11 +26,11 @@
 
 
     <div
-      class="wrapper {{ if default false .Site.Params.GeekdocDarkModeDim }}dark-mode-dim{{ end }}"
+      class="wrapper {{ if default false .Site.Params.geekdocDarkModeDim }}dark-mode-dim{{ end }}"
     >
       <input type="checkbox" class="hidden" id="menu-control" />
       <input type="checkbox" class="hidden" id="menu-header-control" />
-      {{ $navEnabled := default true .Page.Params.GeekdocNav }}
+      {{ $navEnabled := default true .Page.Params.geekdocNav }}
       {{ partial "site-header" (dict "Root" . "MenuEnabled" $navEnabled) }}
 
 
@@ -67,7 +56,5 @@
     </div>
 
     {{ partial "foot" . }}
-
-    {{ partial "gdpr-notice.html" }}
   </body>
 </html>
