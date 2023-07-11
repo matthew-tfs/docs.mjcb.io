@@ -4,11 +4,11 @@ geekdocNav: true
 geekdocAnchor: false
 ---
 
-Active Directory Certificate Services is a role that has been available in Windows Server 2008 and later versions that is responsible for creating Certificate Authorities.
+Active Directory Certificate Services is a role that has been available in Windows Server 2008 and later versions that is responsible for creating Certificate Authorities using Windows Server.
 
 {{< toc >}}
 
-## Features ##
+## Active Directory Certificate Services Features ##
 
 Active Directory Certificate Services is split up into six separate roles, which provides additional options for various deployment scenarios:
 
@@ -21,32 +21,17 @@ Active Directory Certificate Services is split up into six separate roles, which
 * **Network Device Enrollment Service** - The Network Device Enrollment Service (NDES) role gives the AD CS role the ability to issue and manage certificates for network devices such as switches, routers, and firewalls. These types of devices typically do not have Active Directory accounts associated with them, so they are not able to automatically request certificates.
 * **Online Responder** - The Online Responder role adds the OCSP functionality to Active Directory Certificate Services, which allows for rapid revocation of certificates in large environments.
 
-## History of AD CS ##
+## History of Active Directory Certificate Services ##
 
-The predecessor to Active Directory Certificate Services was known as Microsoft Certificate Server. This version was originally released for Windows NT 4.0 Server as an optional feature in 1998 (with the Windows NT 4.0 Option Pack). It offered basic and limited Certificate Authority features to Windows and was not easy to install or manage. There were subsequent versions of the Microsoft Certificate Server application released for Windows 2000 Server, Windows Server 2003 and finally for Windows Server 2003 R2.
+The predecessor to **Active Directory Certificate Services** was known as **Microsoft Certificate Server**. This version was originally released for Windows NT 4.0 Server as an optional feature in 1998 (with the Windows NT 4.0 Option Pack). It offered basic and limited Certificate Authority features to Windows, and was not easy to install or manage. There were subsequent versions of the **Microsoft Certificate Server** application released for Windows 2000 Server, Windows Server 2003 and finally for Windows Server 2003 R2.
 
-When Windows Server 2008 was released, the Microsoft Certificate Server application was retired in favour of the new Active Directory Certificate Services role, and the role has continued to be updated since that initial release.
-
-
-
-Active Directory Certificate Services was first introduced in it's current format in Windows Server 2008. The first version was introduced in Windows NT 4.0 Server, and it was called Microsoft Certificate Services.
-
-Windows NT 4.0 Server
-Windows 2000 Server
-Windows Server 2003
-Windows Server 2003 R2
-Windows Server 2008
-Windows Server 2008 R2
-Windows Server 2012
-Windows Server 2012 R2
-Windows Server 2016
-Windows Server 2019
-Windows Server 2022
+When Windows Server 2008 was released, the **Microsoft Certificate Server** application was retired in favour of the new **Active Directory Certificate Services** role, and the role has continued to be updated since that initial release.
 
 ## Guides ##
 
 I have created a few guides on this subject, as well as a few publications.
 
-* [AD CS on Windows Server 2019 Guide](/microsoft/adcs/adcs-windows-server-2019-guide/) - Free
+* [AD CS on Windows Server 2019 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019/) - Free
+* [AD CS on Windows Server 2022 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2022/) - Free
 * [Building a Certificate Authority in Windows Server 2019](https://mjcb.io/publications/building-a-certificate-authority-in-windows-server-2019/) - Free
 * [Practical Guide to PKI with Windows Server](https://mjcb.io/publications/practical-guide-to-pki-with-windows-server/) - Paid
