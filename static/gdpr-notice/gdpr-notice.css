@@ -3,7 +3,7 @@
   bottom: -100%;
   left: 0;
   right: 0;
-  background: #4286c9;
+  background: #205375;
   color: #f5f6fa;
   padding: 0 32px;
   box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
@@ -20,7 +20,7 @@
 }
 
 .gdpr-button {
-    background-color: #30333d;
+    background-color: #29363e;
     color: #ffffff;
     display: inline-flex;
     padding: 0.7rem 1.5rem;
