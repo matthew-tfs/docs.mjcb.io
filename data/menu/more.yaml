@@ -4,3 +4,11 @@ more:
     ref: "https://mjcb.io/"
     external: true
     icon: "gdoc_home"
+  - name: LinkedIn
+    ref: "https://www.linkedin.com/in/matthewburr/"
+    external: true
+    icon: gdoc_person
+  - name: GitHub
+    ref: "https://github.com/matthew-tfs/docs.mjcb.io/"
+    external: true
+    icon: gdoc_github
