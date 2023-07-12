@@ -1,5 +1,5 @@
 ---
-title: docs.mjcb.io
+title: "docs.mjcb.io"
 geekdocNav: true
 geekdocAnchor: false
 ---

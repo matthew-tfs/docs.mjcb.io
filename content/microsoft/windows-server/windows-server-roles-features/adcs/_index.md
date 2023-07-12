@@ -27,7 +27,7 @@ The predecessor to **Active Directory Certificate Services** was known as **Micr
 
 When Windows Server 2008 was released, the **Microsoft Certificate Server** application was retired in favour of the new **Active Directory Certificate Services** role, and the role has continued to be updated since that initial release.
 
-## Guides ##
+## AD CS Guides ##
 
 I have created a few guides on this subject, as well as a few publications.
 

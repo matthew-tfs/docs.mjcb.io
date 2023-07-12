@@ -1,5 +1,5 @@
 ---
-title: Windows Client
+title: "Windows Client"
 geekdocNav: true
 geekdocAnchor: false
 ---

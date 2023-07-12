@@ -1,5 +1,5 @@
 ---
-title: Windows 11
+title: "Windows 11"
 geekdocNav: true
 geekdocAnchor: false
 geekdocCollapseSection: true

@@ -1,5 +1,5 @@
 ---
-title: Cookie Policy
+title: "Cookie Policy"
 geekdocNav: true
 geekdocAnchor: false
 ---

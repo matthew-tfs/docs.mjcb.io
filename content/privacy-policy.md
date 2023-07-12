@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy
+title: "Privacy Policy"
 geekdocNav: true
 geekdocAnchor: false
 ---
