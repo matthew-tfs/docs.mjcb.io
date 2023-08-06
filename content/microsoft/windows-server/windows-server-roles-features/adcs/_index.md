@@ -27,11 +27,11 @@ The predecessor to **Active Directory Certificate Services** was known as **Micr
 
 When Windows Server 2008 was released, the **Microsoft Certificate Server** application was retired in favour of the new **Active Directory Certificate Services** role, and the role has continued to be updated since that initial release.
 
-## AD CS Guides ##
+## AD CS Guides and Publications ##
 
-I have created a few guides on this subject, as well as a few publications.
+I have created a few guides on this subject, as well as a few publications:
 
-* [AD CS on Windows Server 2019 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019/) - Free
-* [AD CS on Windows Server 2022 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2022/) - Free
-* [Building a Certificate Authority in Windows Server 2019](https://mjcb.io/publications/building-a-certificate-authority-in-windows-server-2019/) - Free
-* [Practical Guide to PKI with Windows Server](https://mjcb.io/publications/practical-guide-to-pki-with-windows-server/) - Paid
+* [AD CS on Windows Server 2019 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019/)
+* [AD CS on Windows Server 2022 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2022/)
+* [Building a Certificate Authority in Windows Server 2019](https://mjcb.io/publications/building-a-certificate-authority-in-windows-server-2019/)
+* [Practical Guide to PKI with Windows Server](https://mjcb.io/publications/practical-guide-to-pki-with-windows-server/)

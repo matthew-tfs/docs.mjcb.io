@@ -15,7 +15,9 @@ geekdocCollapseSection: true
 This guide is archived and will no longer be updated. It has been superseded with the [AD CS on Windows Server 2022](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2022/) guide.
 {{< /hint >}}
 
-This [Building a Certificate Authority in Windows Server 2019](https://mjcb.io/blog/2020/03/09/certificate-authority-windows-server-2019/) guide was originally posted on the [https://mjcb.io](https://mjcb.io/) website in March 2020. This guide has received minor updates to fix minor errors and to improve readability.
+{{< hint type=note title="Original Guide" >}}
+This guide was originally posted on the [https://mjcb.io](https://mjcb.io/) website in March 2020. This guide has received minor updates to fix minor errors and to improve readability.
+{{< /hint >}}
 
 {{< toc >}}
 
