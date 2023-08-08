@@ -1,0 +1,6 @@
+User-Agent: * 
+Allow: /
+Sitemap: https://docs.mjcb.io/sitemap.xml
+
+User-agent: GPTBot
+Disallow: /
