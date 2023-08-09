@@ -7,7 +7,7 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 disablePathToLower = true
 enableGitInfo = true
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 googleAnalytics = "G-TC72E9W5TV"
 
