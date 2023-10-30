@@ -10,7 +10,11 @@ This website uses the [Geekdoc](https://github.com/thegeeklab/hugo-geekdoc) them
 
 ## License ##
 
-This website is licensed under the MIT License. See the [LICENSE](https://github.com/matthew-tfs/docs.mjcb.io/blob/main/LICENSE) file for details.
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+See the [LICENSE](https://github.com/matthew-tfs/docs.mjcb.io/blob/main/LICENSE) file for details.
 
 ## Netlify Status ##
 

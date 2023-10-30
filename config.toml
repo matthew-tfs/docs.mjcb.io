@@ -108,5 +108,5 @@ googleAnalytics = "G-TC72E9W5TV"
     # (Optional, default none) Adds a "Content licensed under <license>" line to the footer.
     # Could be used if you want to define a default license for your content.
     [params.geekdocContentLicense]
-        name = "MIT"
-        link = "https://opensource.org/licenses/MIT"
+        name = "CC BY-NC-SA"
+        link = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
