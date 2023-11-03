@@ -11,5 +11,5 @@ This site may also host other guides, documentation or notes on existing project
 Documentation that I have created over the years will be gradually migrated to this website as I get time to do so.
 
 {{< hint type=note title="Website Content" >}}
-The content on this website can change at any time. I will make as much effort as possible to preserve the URL structure of this website, but it can change without warning. The entire website contents is publicly available through GitHub.
+The content on this website can change at any time. I will make as much effort as possible to preserve the URL structure of this website, but it can change without warning. The entire website contents are publicly available through GitHub.
 {{< /hint >}}

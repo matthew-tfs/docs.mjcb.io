@@ -11,10 +11,6 @@ geekdocAnchor: false
 geekdocCollapseSection: true
 ---
 
-{{< hint type=note title="Work in Progress" >}}
-This guide is currently a work in progress. The guide has been tested and all steps are confirmed to be working correctly, but there are still minor issues with the order of certain steps and some other minor errors. The contents of this guide may change without warning.
-{{< /hint >}}
-
 This is an updated version of the [AD CS on Windows Server 2019](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019-guide/) guide that is already available on this website. This guide reflects any changes that are present in Active Directory Certificate Services, Windows Server 2022, and Windows 11.
 
 {{< toc >}}

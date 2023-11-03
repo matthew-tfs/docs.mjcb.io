@@ -31,7 +31,13 @@ When Windows Server 2008 was released, the **Microsoft Certificate Server** appl
 
 I have created a few guides on this subject, as well as a few publications:
 
+### Guides ###
+
 * [AD CS on Windows Server 2019 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2019/)
 * [AD CS on Windows Server 2022 Guide](/microsoft/windows-server/windows-server-roles-features/adcs/adcs-windows-server-2022/)
+
+### Publications ###
+
 * [Building a Certificate Authority in Windows Server 2019](https://mjcb.io/publications/building-a-certificate-authority-in-windows-server-2019/)
 * [Practical Guide to PKI with Windows Server](https://mjcb.io/publications/practical-guide-to-pki-with-windows-server/)
+* [AD CS on Windows Server 2022](https://mjcb.io/publications/adcs-on-windows-server-2022/)

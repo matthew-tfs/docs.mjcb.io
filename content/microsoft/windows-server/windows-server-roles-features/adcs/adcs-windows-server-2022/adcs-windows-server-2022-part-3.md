@@ -179,7 +179,7 @@ On the **TFS-CA01** server, enable Double Escaping in IIS to allow for proper CR
 3. Type following command and press **ENTER**:
 
 ```cmd
-appcmd set config /section:requestfiltering /allowdoubleescaping:true
+appcmd.exe set config /section:requestfiltering /allowdoubleescaping:true
 ```
 
 4. Restart IIS service by typing **iisreset** and pressing **ENTER**.
