@@ -16,7 +16,7 @@ This guide is archived and will no longer be updated. It has been superseded wit
 {{< /hint >}}
 
 {{< hint type=note title="Original Guide" >}}
-This guide was originally posted on the [https://mjcb.io](https://mjcb.io/) website in March 2020. This guide has received minor updates to fix minor errors and to improve readability.
+This guide was originally posted on the [https://mjcb.io](https://mjcb.io/) website in March 2020. This guide has received updates to fix minor errors and to improve readability.
 {{< /hint >}}
 
 {{< toc >}}
