@@ -139,15 +139,15 @@ In the deployment of Active Directory Certificate Services on the **TFS Labs** d
 
 There are a lot of very good reasons to use an Offline Root CA in your environment and it is pretty much expected in a Certificate Authority that is created today. Unauthorized access to your Certificate Authority can put your organization at risk and can cause a lot of headaches to fix it, especially if you depend heavily on a PKI for critical functions in your environment.
 
-The Root CA is critical to your PKI, and you don’t want to risk having the Root CA compromised and having your private keys leaked. This would effectively invalidate every single certificate in your organization.
+The Root CA is critical to your PKI, and you don't want to risk having the Root CA compromised and having your private keys leaked. This would effectively invalidate every single certificate in your organization.
 
-The best way to protect the Root CA is always to have it be completely unavailable to people on the network. It isn’t needed in day-to-day operations, so having it online is not necessary and can put it at unnecessary risk. This also means that it is not enough to just have it turned off until needed, it shouldn’t be accessible by anyone even when it is temporarily powered on.
+The best way to protect the Root CA is always to have it be completely unavailable to people on the network. It isn't needed in day-to-day operations, so having it online is not necessary and can put it at unnecessary risk. This also means that it is not enough to just have it turned off until needed, it shouldn't be accessible by anyone even when it is temporarily powered on.
 
-A lot of administrators don’t even have a network connection to it and use virtual floppy disks to transfer data between it and other servers. It is cumbersome, but this happens so infrequently that it shouldn’t be an issue. Some virtualization platforms allow for copy/paste, but that should be disabled for the Root CA to minimize the attack surface on it.
+A lot of administrators don't even have a network connection to it and use virtual floppy disks to transfer data between it and other servers. It is cumbersome, but this happens so infrequently that it shouldn't be an issue. Some virtualization platforms allow for copy/paste, but that should be disabled for the Root CA to minimize the attack surface on it.
 
 ## Registered IANA Number ##
 
-When you are dealing with an internal Certificate Authority you don’t really need to worry about utilizing a registered IANA Number. This is only ever required if you are going to be using your Certificate Authority outside of your organization. This is beyond the scope of this guide, but it is an option should it be required for your organization.
+When you are dealing with an internal Certificate Authority you don't really need to worry about utilizing a registered IANA Number. This is only ever required if you are going to be using your Certificate Authority outside of your organization. This is beyond the scope of this guide, but it is an option should it be required for your organization.
 
 ## Active Directory Certificate Services Internal URLs ##
 
@@ -188,6 +188,6 @@ Testing the deployment of Active Directory Certificate Services in a controlled 
 
 I cannot guarantee that this guide will work in your environment, and I cannot take responsibility if this guide causes any potential issues in your environment. If you or anyone else has attempted to create a Certificate Authority in the past, you should check your Active Directory setup to see if you have any failed Certificate Authorities in there already. You should remove these first before starting this guide.
 
-I cannot guarantee that there are no errors in this guide as well. I have implemented this exact same setup at multiple organizations without any major issues, but odd issues can always arise in a Windows Server infrastructure. So be prepared to have to “Google” your way out a few error messages in this guide.
+I cannot guarantee that there are no errors in this guide as well. I have implemented this exact same setup at multiple organizations without any major issues, but odd issues can always arise in a Windows Server infrastructure. So be prepared to have to "Google" your way out a few error messages in this guide.
 
-As with everything else, you should build this out in a lab at least once prior to attempting this on a production environment. You should not attempt to implement this guide for your organization if you don’t have a good understanding of how a Certificate Authority and PKI works.
+As with everything else, you should build this out in a lab at least once prior to attempting this on a production environment. You should not attempt to implement this guide for your organization if you don't have a good understanding of how a Certificate Authority and PKI works.

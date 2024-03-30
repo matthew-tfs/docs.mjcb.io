@@ -146,7 +146,7 @@ To verify that the **Online Responder** server can communicate with devices on t
 2. Run the following command in an **Administrative Command Prompt** to launch the **URL Retrieval Tool**:
 
 ```cmd
-certutil.exe -URL “C:\TFS Labs Enterprise CA.cer”
+certutil.exe -URL "C:\TFS Labs Enterprise CA.cer"
 ```
 
 3. Close the **Administrative Command Prompt**.

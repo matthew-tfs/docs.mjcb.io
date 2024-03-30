@@ -62,13 +62,13 @@ Since the **TFS-ROOT-CA** server is not a member of an Active Directory domain, 
 1. On the **TFS-ROOT-CA** server, open the **Local Group Policy Editor** console.
 2. Modify the **Local Computer Policy > Computer Configuration > Windows Settings > Security Settings > Local Policies > Security Options** settings to match the following options:
    * **Accounts: Administrator account status** - Enabled
-   * **Accounts: Block Microsoft accounts** - Users can’t add or log on with Microsoft Accounts
+   * **Accounts: Block Microsoft accounts** - Users can't add or log on with Microsoft Accounts
    * **Accounts: Guest account status** - Disabled
    * **Accounts: Limit local account use of blank passwords to Console logon only** - Enabled
    * **Accounts: Rename administrator account** - CA-Admin
    * **Accounts: Rename guest account** - Administrator
-   * **Interactive Logon: Don’t display last signed-in** - Enabled
-   * **Interactive Logon: Don’t display username at sign-in** - Enabled
+   * **Interactive Logon: Don't display last signed-in** - Enabled
+   * **Interactive Logon: Don't display username at sign-in** - Enabled
    * **Network security: Do not store LAN Manager hash value on next password change** - Enabled
    * **Network security: LAN Manager authentication level** - Send NTLMv2 response only. Refuse LM & NTLM
 
@@ -192,7 +192,7 @@ You can update the OID number in the **InternalPolicy** section for your deploym
 {{< /hint >}}
 
 {{< hint type=important title="Signature Algorithm Support Issues" >}}
-The **AlternateSignatureAlgorithm = 0** flag in the CAPolicy.inf file explicitly uses SHA256 for the algorithm instead of RSASSA-PSS. This can cause issues with some platforms (especially macOS and iOS) and by ensuring that it is disabled you shouldn’t have issues with those certificates.
+The **AlternateSignatureAlgorithm = 0** flag in the CAPolicy.inf file explicitly uses SHA256 for the algorithm instead of RSASSA-PSS. This can cause issues with some platforms (especially macOS and iOS) and by ensuring that it is disabled you shouldn't have issues with those certificates.
 {{< /hint >}}
 
 ## 2.4 Active Directory Certificate Services Role Installation ##

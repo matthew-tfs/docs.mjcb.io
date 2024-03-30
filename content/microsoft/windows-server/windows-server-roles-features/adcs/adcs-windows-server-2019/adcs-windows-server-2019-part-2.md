@@ -75,7 +75,7 @@ You can update the OID number in the **InternalPolicy** section for your deploym
 {{< /hint >}}
 
 {{< hint type=important title="Signature Algorithm Support Issues" >}}
-The **AlternateSignatureAlgorithm = 0** flag in the CAPolicy.inf file explicitly uses SHA256 for the algorithm instead of RSASSA-PSS. This can cause issues with some platforms (especially macOS and iOS) and by ensuring that it is disabled you shouldn’t have issues with those certificates.
+The **AlternateSignatureAlgorithm = 0** flag in the CAPolicy.inf file explicitly uses SHA256 for the algorithm instead of RSASSA-PSS. This can cause issues with some platforms (especially macOS and iOS) and by ensuring that it is disabled you shouldn't have issues with those certificates.
 {{< /hint >}}
 
 ## 2.4 Active Directory Certificate Services Role Installation ##

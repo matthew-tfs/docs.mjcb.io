@@ -2,5 +2,7 @@ User-Agent: *
 Allow: /
 Sitemap: https://docs.mjcb.io/sitemap.xml
 
+Disallow: apple/lawsuits/2-24-cv-04055/*
+
 User-agent: GPTBot
 Disallow: /
