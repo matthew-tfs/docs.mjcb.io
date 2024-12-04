@@ -1,8 +1,8 @@
 # docs.mjcb.io #
 
-This repository is for the docs.mjcb.io website that is currently using the Hugo platform and hosted on Netlify.
+This is the Git repository is for the **docs.mjcb.io** website that is currently using the Hugo CMS platform and is deployed using the Netlify platform.
 
-This website hosts various documentation for the [mjcb.io](https://mjcb.io/) website, as well as any other documentation from other sources.
+This website hosts various documentation for the [mjcb.io](https://mjcb.io/) website, as well as other documentation from other sources.
 
 ## Theme ##
 
